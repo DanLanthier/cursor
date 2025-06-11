@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation & Development 101</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #e0e0e0 url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+      font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+      color: #222;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #container {
+      width: 800px;
+      height: 600px;
+      margin: 30px auto;
+      border: 4px double #003399;
+      background: #fff;
+      box-shadow: 0 0 20px #888;
+      position: relative;
+      overflow: hidden;
+    }
+    #header {
+      background: linear-gradient(90deg, #003399 0%, #66ccff 100%);
+      color: #fff;
+      padding: 18px 0 10px 0;
+      text-align: center;
+      font-size: 2.2em;
+      letter-spacing: 2px;
+      border-bottom: 2px solid #003399;
+      text-shadow: 2px 2px 0 #000, 0 0 10px #66ccff;
+    }
+    #navbar {
+      background: #c0c0c0;
+      padding: 8px 0;
+      text-align: center;
+      border-bottom: 2px groove #999;
+    }
+    .nav-btn {
+      display: inline-block;
+      background: #003399;
+      color: #fff;
+      border: 2px outset #fff;
+      padding: 7px 22px;
+      margin: 0 10px;
+      font-size: 1em;
+      font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+      text-decoration: none;
+      border-radius: 6px;
+      box-shadow: 2px 2px 0 #888;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .nav-btn:hover {
+      background: #66ccff;
+      color: #003399;
+      border: 2px inset #003399;
+    }
+    #main {
+      padding: 30px 40px 0 40px;
+      height: 420px;
+      overflow: hidden;
+    }
+    #welcome {
+      font-size: 1.2em;
+      margin-bottom: 18px;
+      color: #003399;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 #fff;
+    }
+    .section {
+      margin-bottom: 18px;
+    }
+    .section-title {
+      font-size: 1.1em;
+      color: #222;
+      background: #e0e0e0;
+      border-left: 6px solid #003399;
+      padding-left: 8px;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    .links {
+      margin-left: 18px;
+    }
+    .links a {
+      color: #003399;
+      text-decoration: underline;
+      font-size: 1em;
+      margin-right: 18px;
+    }
+    .links a:hover {
+      color: #66ccff;
+      text-decoration: none;
+    }
+    #footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #003399;
+      color: #fff;
+      text-align: center;
+      font-size: 0.9em;
+      padding: 6px 0;
+      border-top: 2px solid #66ccff;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">Animation &amp; Development 101</div>
+    <div id="navbar">
+      <a class="nav-btn" href="#welcome">Home</a>
+      <a class="nav-btn" href="#articles">Articles</a>
+      <a class="nav-btn" href="#examples">Examples</a>
+      <a class="nav-btn" href="https://web.archive.org/web/20020802000000*/http://www.alistapart.com/" target="_blank">A List Apart</a>
+    </div>
+    <div id="main">
+      <div id="welcome" class="section">
+        Welcome to <span style="color:#B200FF;">Animation &amp; Development 101</span>!<br>
+        Your retro guide to learning web animation and development, early-2000s style.
+      </div>
+      <div id="articles" class="section">
+        <div class="section-title">Instructional Articles</div>
+        <div class="links">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations" target="_blank">Canvas Animation Basics</a>
+          <a href="https://web.archive.org/web/20020802000000*/http://www.htmlgoodies.com/" target="_blank">HTML Goodies (Archive)</a>
+          <a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank">CSS Animation Almanac</a>
+        </div>
+      </div>
+      <div id="examples" class="section">
+        <div class="section-title">Online Examples</div>
+        <div class="links">
+          <a href="https://codepen.io/collection/nZpPbz" target="_blank">CodePen Animation Collection</a>
+          <a href="https://www.javascripttutorial.net/web-apis/javascript-animation/" target="_blank">JavaScript Animation Example</a>
+          <a href="https://web.archive.org/web/20020802000000*/http://www.dynamicdrive.com/" target="_blank">Dynamic Drive (Archive)</a>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      &copy; 2024 Animation &amp; Development 101 | <span style="color:#B200FF;">VIBE</span> like it's 2002!
+    </div>
+  </div>
+</body>
+</html> 
